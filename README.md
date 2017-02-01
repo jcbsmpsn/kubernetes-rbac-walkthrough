@@ -6,4 +6,4 @@ the time of writing.
 * [Provisioning Google Cloud Platform Resources](provisioning-gcp.md)
 * [Installing Kubernetes](installing-kubernetes.md)
 * [Configuring RBAC](configuring-rbac.md)
-
+* [Cleaning Up](cleanup.md)
