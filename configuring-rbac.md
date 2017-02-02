@@ -209,7 +209,16 @@ configuration.
     curl -ik -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" https://kubernetes/api/v1/namespaces/default/pods
     ```
 
-11. Add a role binding. Put this in a new file `default-pod-reader-rolebinding.yml`.
+    And that no longer works. Once RBAC is enabled, the authorization available
+    to the `default` service account is greatly reduced. If you previously had
+    an application running in a container that was using the token to interact
+    with the API, this might be a problem for you.
+
+11. Add new permissions to the `default` service account so it can access more
+    parts of the API again.
+
+    Add a role binding that binds the `pod-reader-role` to the default service
+    account. Put this in a new file `default-pod-reader-rolebinding.yml`.
 
     ```
     kind: RoleBinding

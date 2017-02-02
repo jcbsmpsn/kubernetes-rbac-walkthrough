@@ -1,7 +1,7 @@
 # Kubernetes RBAC Walkthrough
 
-A walk through of configuring RBAC in Kubernetes 1.6, which is unreleased at
-the time of writing.
+A walk through of configuring RBAC in Kubernetes 1.5, with a couple of notes
+about differences that will be in 1.6.
 
 ## Assumptions
 
