@@ -1,5 +1,7 @@
 # Kubernetes RBAC Walkthrough
 
+This is not an official Google product
+
 A walk through of configuring RBAC in Kubernetes 1.5, with a couple of notes
 about differences that will be in 1.6.
 
